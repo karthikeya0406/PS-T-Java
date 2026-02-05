@@ -15,19 +15,19 @@ public class Task1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // number of students
+ 
         int n = sc.nextInt();
 
         List<Student> students = new ArrayList<>();
 
-        // input student data
+    
         for (int i = 0; i < n; i++) {
             String name = sc.next();
             int marks = sc.nextInt();
             students.add(new Student(name, marks));
         }
 
-        // top k students
+        
         int k = sc.nextInt();
 
         List<String> topStudents = students.stream()
